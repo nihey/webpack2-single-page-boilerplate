@@ -1,0 +1,38 @@
+{
+  "name": "webpack2-single-page-boilerplate",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nihey/webpack2-single-page-boilerplate.git"
+  },
+  "keywords": [
+    "webpack2"
+  ],
+  "author": "Nihey Takizawa",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/nihey/webpack2-single-page-boilerplate/issues"
+  },
+  "homepage": "https://github.com/nihey/webpack2-single-page-boilerplate#readme",
+  "dependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^0.28.0",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.11.1",
+    "html-loader": "^0.4.5",
+    "img-loader": "^2.0.0",
+    "json-loader": "^0.5.4",
+    "node-sass": "^4.5.2",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.16.1",
+    "webpack": "^2.4.1"
+  }
+}
