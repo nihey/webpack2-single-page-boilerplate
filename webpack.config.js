@@ -10,10 +10,18 @@ module.exports = {
     historyApiFallback: true,
   },
 
+  resolve: {
+    modules: [path.resolve(__dirname, 'scripts'), path.resolve(__dirname, 'node_modules')],
+    extensions: ['.js', '.json', '.jsx'],
+    alias: {
+      config$: 'config/' + (process.env.NODE_ENV || 'default') + '.js',
+    },
+  },
+
   entry: {
-    'script': './scripts/index.js',
-    'style': './styles/index.scss',
-    'index': './index.html',
+    'script': path.resolve(__dirname, 'scripts/index.js'),
+    'style': path.resolve(__dirname, 'styles/index.scss'),
+    'index': path.resolve(__dirname, 'index.html'),
   },
 
   output: {
