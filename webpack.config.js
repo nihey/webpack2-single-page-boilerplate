@@ -5,6 +5,8 @@ var extractHTML = new ExtractTextPlugin('index.html');
 var extractCSS = new ExtractTextPlugin('style.css');
 
 module.exports = {
+  devtool: 'source-map',
+
   devServer: {
     port: 8000,
     historyApiFallback: true,
