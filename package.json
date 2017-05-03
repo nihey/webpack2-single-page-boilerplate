@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "watch": "webpack-dev-server --host 0.0.0.0",
     "test": "eslint ."
   },
   "repository": {
@@ -37,6 +38,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
-    "eslint": "^3.19.0"
+    "eslint": "^3.19.0",
+    "webpack-dev-server": "^2.4.5"
   }
 }

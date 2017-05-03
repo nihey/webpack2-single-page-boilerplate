@@ -5,6 +5,11 @@ var extractHTML = new ExtractTextPlugin('index.html');
 var extractCSS = new ExtractTextPlugin('style.css');
 
 module.exports = {
+  devServer: {
+    port: 8000,
+    historyApiFallback: true,
+  },
+
   entry: {
     'script': './scripts/index.js',
     'style': './styles/index.scss',
@@ -51,11 +56,17 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|gif|svg.*)$/,
-        use: ['file-loader', 'img-loader'],
+        use: [{
+          loader: 'file-loader',
+          query: {useRelativePath: false},
+        }, 'img-loader'],
       },
       {
         test: /\.(ttf.*|eot.*|woff.*|ogg|mp3)$/,
-        use: ['file-loader'],
+        use: [{
+          loader: 'file-loader',
+          query: {useRelativePath: false},
+        }],
       },
     ],
   },
