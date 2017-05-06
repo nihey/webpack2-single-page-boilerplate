@@ -2,7 +2,7 @@
 
 A boilerplate for a single page app using [webpack][webpack_link]
 
-
+[![Build Status](https://travis-ci.org/nihey/webpack2-single-page-boilerplate.svg?branch=master)](https://travis-ci.org/nihey/webpack2-single-page-boilerplate)
 [![Dependency Status](https://david-dm.org/nihey/webpack2-single-page-boilerplate.png)](https://david-dm.org/nihey/webpack2-single-page-boilerplate)
 
 # Why should I use it
